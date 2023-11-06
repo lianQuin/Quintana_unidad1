@@ -1,0 +1,326 @@
+
+@import url(./componentes/reset.css);
+@import url(./componentes/footer.css);
+@import url(./componentes/header.css);
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+
+/* aqui el campo de opciones de seguros */
+.valor-desplegable {
+    position: relative;
+    width:30em;
+    height: 1em;
+    overflow: hidden;
+  }
+  
+  .valor-desplegable:hover  {
+    overflow: visible;
+  }
+ 
+  .valor-desplegable .valorTexto {
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 4px;
+   
+    position: relative;
+    box-sizing: border-box;
+    color:var( --light-bg-solid ) ;
+  }
+  
+  .valor-desplegable .valorTexto::after {
+    content: "\25BF";
+    position: absolute;
+    right: 4px;
+    color:var(--dark-solid) ;
+  }
+  
+  .valor-desplegable > ul,
+  .valor-desplegable > ul > li > ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 24px;
+    border: 1px solid var(--light-bg-solid);
+    width: 200px;
+    margin-top: 0;
+    box-sizing: border-box;
+    background:var( --light-bg-solid );
+  }
+  
+  .valor-desplegable li {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 4px;
+    border-bottom: 1px solid var( --light-bg-solid ) ;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color:var(--dark-solid);
+    font-size: var( --font-xxsmall);
+  }
+  
+  .valor-desplegable li:hover {
+    overflow: visible;
+    background:var( --light-bg-solid );
+    color:var(--dark-solid);
+  }
+  
+  .valor-desplegable > ul > li > ul {
+    top: -1px;
+    left: 198px;
+  }
+  
+  .valor-desplegable > ul > li > ul::before {
+    content:"\25B9";
+    position: absolute;
+    left: -15px;
+  }
+/*comienza formulario*/
+
+.campo{
+
+  width: auto;
+  background-color:var( --light-bg-solid ) ;
+  padding: 1px;
+  margin: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  font-family: var( --alternative-font);
+  color:var(--dark-solid);
+  box-shadow: 7px 50px 25px var(--dark-solid);
+  text-align: left;
+}
+.animate__animated.animate__fadeInDown{
+    --animate-duration:5s;
+    animation-iteration-count: infinite ;
+    }
+    
+.animate__animated.animate__adeInDownBig{
+     --animate-duration:5s;
+    -o-animation-direction: alternate-reverse;
+     animation-iteration-count: infinite ;
+    }
+    input[type="nombre"] {
+      padding: 10px;
+      width: auto;
+      border: 1px solid var(--dark-bg-solid );
+      border-radius: 5px;
+    }
+
+    input[type="apellido"] {
+      padding: 10px;
+      width: auto;
+      border: 1px solid var(--dark-bg-solid );
+      border-radius: 5px;
+    }
+    input[type="dni"] {
+      padding: 10px;
+      width: auto;
+      border: 1px solid var(--dark-bg-solid );
+      border-radius: 5px;
+    }
+    input[type="telefono"] {
+      padding: 10px;
+      width: auto;
+      border: 1px solid var(--dark-bg-solid );
+      border-radius: 5px;
+    }
+  input[type="email"] {
+    padding: 10px;
+    width: auto;
+    border: 1px solid var(--dark-bg-solid );
+    border-radius: 5px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: auto;
+    border: 1px solid var(--dark-bg-solid );
+    border-radius: 5px;
+  }
+  .alert-danger{ padding: 20px;
+    width: auto;
+    border: 1px solid var(--dark-bg-solid );
+    border-radius: 5px;
+    
+  }
+  #step-1  {
+    display: block;
+    width: auto;
+    background-color: var(--secondary-500 );
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 8px;
+    font-family: var(--base-font );
+    color:var( --light-bg-solid ) ;
+    font-size:var(--font-medium ) ;
+    box-shadow:inset 7px 13px 37px var( --dark-solid);
+}
+
+
+button[type="button"]  {
+  width:auto;
+  height: 20%;
+  font-size:var(--font-small ) ;
+  
+  background-color: var(--secondary-solid );
+  
+  }
+  
+  #step-2{
+      display: none;
+  }
+  #summary {
+      border: 1px solid var( --light-bg-solid ) ;
+      padding: 10px;
+    }
+    #summary {
+
+  
+          padding: 90px;
+          width: auto;
+          background-color:var(--secondary-500 );
+          padding: 20px;
+          margin: auto;
+          margin-top: 100px;
+          border-radius: 8px;
+          font-family: var(--base-font );
+          color:var( --light-bg-solid )  ;
+          font-size: var(--font-medium );
+          box-shadow:inset 7px 13px 37px var(--dark-solid );
+          padding: 10px;
+        }
+  
+  
+  
+ 
+  .animate__animated.animate__fadeInDown{
+  --animate-duration: 4s;}
+  
+  a{
+      color:var( --light-bg-solid ) ;
+      text-decoration: none;
+  }
+  
+  a:hover{
+      background-color: var(--secondary-solid );
+  }
+  
+  .containerLogo{
+    width: 60px;
+    height:70
+}
+
+.containMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-bg-solid );
+}
+header{width: 100%;
+    background-color:var( --light-bg-solid )  ;
+}
+
+
+
+
+
+.containerH1{
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    padding-inline-start: 2.5%;
+    color:var( --light-bg-solid );
+    overflow: hidden;
+    align-items: center;
+    text-align: center;  
+}
+
+.containernavh1Logo{
+    display:flex;
+   justify-content: center; 
+    width: auto;
+    height: 100px;
+    background-color:var(--secondary-900 );
+}
+
+
+
+/*footer*/
+.footer{
+  width: auto;
+    text-align: center;
+    margin-top: 283px;
+    background:var(--secondary-900 );
+    height: 150px;
+}
+
+
+.contfooter {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color:var(--secondary-900 ); 
+    
+}
+.contenedor a{
+    font-size: 25px;
+    transition: all ease 300ms;    
+}
+.contenedor-icono {
+    color: var( --light-bg-solid ) ;
+}
+
+.contenedor a:hover{
+    transform: scale(1.2);
+}
+
+.h3{
+    font-family:var(--base-font );
+    color:var( --light-bg-solid )  ; 
+    font-size: 15px;
+    color:var( --light-bg-solid )  ;
+}
+.h3footer{
+  color:var(--secondary-500 )
+}
+section{
+    background-color: var( --light-bg-solid ) ;
+}
+
+img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+a:hover{
+    background-color: var(--secondary-900 );
+}
+
+.containerLogo{
+    width: 60px;
+    height:70px
+}
+
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
